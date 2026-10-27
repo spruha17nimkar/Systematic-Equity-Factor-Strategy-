@@ -1,0 +1,185 @@
+{
+  "headline": {
+    "Long-Short": {
+      "ann_return": 0.07953323668076528,
+      "ann_vol": 0.10713154608300983,
+      "sharpe": 0.7697367000110309,
+      "sortino": 1.3322799526297284,
+      "max_drawdown": -0.18420292890651813,
+      "nw_t_stat": 4.234166800972184,
+      "hit_rate": 0.593167701863354,
+      "skew": -0.008132587303344721,
+      "excess_kurtosis": 0.1620271791778447,
+      "months": 322,
+      "start": "1999-03-31",
+      "end": "2025-12-31",
+      "avg_monthly_turnover": 0.8303350211997683
+    },
+    "Long-Only": {
+      "ann_return": 0.05343969136641524,
+      "ann_vol": 0.16083808804988442,
+      "sharpe": 0.40455832603259007,
+      "sortino": 0.6670851456461765,
+      "max_drawdown": -0.5071891929173078,
+      "nw_t_stat": 2.0093360814114085,
+      "hit_rate": 0.5403726708074534,
+      "skew": -0.08964434525270613,
+      "excess_kurtosis": -0.020745923693020085,
+      "months": 322,
+      "start": "1999-03-31",
+      "end": "2025-12-31",
+      "avg_monthly_turnover": 0.4207744864152838
+    },
+    "Benchmark": {
+      "ann_return": -0.013392388769724373,
+      "ann_vol": 0.16675098834075575,
+      "sharpe": 0.003305090967919437,
+      "sortino": 0.004823262872714695,
+      "max_drawdown": -0.6937534560518133,
+      "nw_t_stat": 0.016859304343965528,
+      "hit_rate": 0.5093167701863354,
+      "skew": -0.26498112832562604,
+      "excess_kurtosis": 0.465611761381588,
+      "months": 322,
+      "start": "1999-03-31",
+      "end": "2025-12-31"
+    }
+  },
+  "robustness": {
+    "subperiod_sharpes": [
+      0.979,
+      0.573,
+      0.476,
+      1.058
+    ],
+    "costs": [
+      {
+        "cost_bps_per_leg": 0,
+        "ann_return": 0.0903,
+        "sharpe": 0.8627,
+        "nw_t_stat": 4.7477
+      },
+      {
+        "cost_bps_per_leg": 5,
+        "ann_return": 0.0849,
+        "sharpe": 0.8162,
+        "nw_t_stat": 4.4909
+      },
+      {
+        "cost_bps_per_leg": 10,
+        "ann_return": 0.0795,
+        "sharpe": 0.7697,
+        "nw_t_stat": 4.2342
+      },
+      {
+        "cost_bps_per_leg": 20,
+        "ann_return": 0.0689,
+        "sharpe": 0.6768,
+        "nw_t_stat": 3.721
+      },
+      {
+        "cost_bps_per_leg": 30,
+        "ann_return": 0.0583,
+        "sharpe": 0.5838,
+        "nw_t_stat": 3.2082
+      },
+      {
+        "cost_bps_per_leg": 50,
+        "ann_return": 0.0375,
+        "sharpe": 0.3978,
+        "nw_t_stat": 2.1838
+      }
+    ],
+    "breakeven_cost_bps": 92.76085419700337,
+    "bootstrap": {
+      "n_boot": 2000,
+      "block_months": 12,
+      "sharpe_point": 0.7697367000110309,
+      "p_sharpe_positive": 1.0,
+      "p05": 0.5065598335970584,
+      "p50": 0.7744543868012235,
+      "p95": 1.0385956132670275
+    },
+    "composite_beats_all": true,
+    "decay_sharpes": {
+      "0": 0.77,
+      "1": 0.771,
+      "2": 0.762,
+      "3": 0.755,
+      "6": 0.83
+    },
+    "deflated": {
+      "n_trials": 25,
+      "observed_sharpe_annual": 0.7697367000110309,
+      "expected_max_sharpe_annual": 0.39972930979424603,
+      "deflated_sharpe_prob": 0.9704196711329126,
+      "probabilistic_sharpe_prob": 0.9999567383503611,
+      "passes_95": true
+    }
+  },
+  "real_data_french": {
+    "Value (HML)": {
+      "ann_return": 0.03041906400101313,
+      "ann_vol": 0.10289015363306277,
+      "sharpe": 0.34284071693332613,
+      "max_drawdown": -0.5777720404536153,
+      "nw_t_stat": 2.2880147290793023,
+      "start": "1963-07-31",
+      "end": "2026-08-31"
+    },
+    "Momentum (UMD)": {
+      "ann_return": 0.06220778687935513,
+      "ann_vol": 0.14570277095208142,
+      "sharpe": 0.4911035298173326,
+      "max_drawdown": -0.577764828808089,
+      "nw_t_stat": 3.8669143841335605,
+      "start": "1963-07-31",
+      "end": "2026-08-31"
+    },
+    "Quality (RMW)": {
+      "ann_return": 0.027355486988658084,
+      "ann_vol": 0.07921413793906082,
+      "sharpe": 0.3808187237502419,
+      "max_drawdown": -0.4178744871762301,
+      "nw_t_stat": 2.7892620612801053,
+      "start": "1963-07-31",
+      "end": "2026-08-31"
+    },
+    "Low-Vol (Lo20-Hi20)": {
+      "ann_return": -0.01260107917028519,
+      "ann_vol": 0.23040073377479778,
+      "sharpe": 0.06250667208175255,
+      "max_drawdown": -0.8442676306213477,
+      "nw_t_stat": 0.4712688009040035,
+      "start": "1963-07-31",
+      "end": "2026-08-31"
+    },
+    "Size (SMB)": {
+      "ann_return": 0.017074625711344105,
+      "ann_vol": 0.10460064109851878,
+      "sharpe": 0.21385522024451958,
+      "max_drawdown": -0.5644845779392695,
+      "nw_t_stat": 1.6000710639144764,
+      "start": "1963-07-31",
+      "end": "2026-08-31"
+    },
+    "Composite (equal weight)": {
+      "ann_return": 0.03302141951096682,
+      "ann_vol": 0.0666299521823556,
+      "sharpe": 0.5215890950854242,
+      "max_drawdown": -0.29580749910686766,
+      "nw_t_stat": 3.6879893761377214,
+      "start": "1963-07-31",
+      "end": "2026-08-31"
+    },
+    "Market (Mkt-RF)": {
+      "ann_return": 0.0618412680067979,
+      "ann_vol": 0.15442752759659217,
+      "sharpe": 0.4676425742707368,
+      "max_drawdown": -0.5575082231927492,
+      "nw_t_stat": 3.632714600750198,
+      "start": "1963-07-31",
+      "end": "2026-08-31"
+    }
+  }
+}
